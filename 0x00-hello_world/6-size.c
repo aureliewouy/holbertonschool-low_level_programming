@@ -1,2 +1,2 @@
 #!/bin/bash
-puts( "Programming is like building a multilingual puzzle \n" );
+printf("Size of a char: %lu byte(s)\n", sizeof(char));
