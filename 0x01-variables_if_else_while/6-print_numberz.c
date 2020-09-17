@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <math.h>
 /**
  * main - Entry point
  *
@@ -8,7 +7,7 @@
  */
 int main(void)
 {
-int ch;
+char ch;
 for (ch = 0; ch < 10; ch ++)
 {
 putchar(ch); 
