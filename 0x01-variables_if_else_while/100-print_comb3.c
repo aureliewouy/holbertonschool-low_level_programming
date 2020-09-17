@@ -7,26 +7,23 @@
  */
 int main(void)
 {
-  long int n, petit, grand, first, last, reverse, multiplicator;
+  long int n, nn;
 for (n = 0; n < 100; n++)
 {
 if ((n / 10) == (n % 10))
 {
 continue;
 }
- last = ((n % 10) + '0');
- first =((n / 10) + '0');
- reverse = last * 10 + first;
- multiplicator = (n / 10) * (n % 10);
- petit = n;
- grand = n+1;
- petit = petit < grand;
- if (((n / 10) * (n % 10)) == ((n / 10) * (n % 10)))
+ nn = n +1;
+if (((n / 10) * (n % 10)) == ((nn / 10) * (nn % 10)))
    {
-     continue;
+     if ( n < nn)
+       { 
+     putchar((n / 10) + '0');
+     putchar((n % 10) + '0');
+       }
    }
- putchar((n / 10) + '0');
- putchar((n % 10) + '0');
+ 
 if (n != 99)
 {
 putchar(',');
