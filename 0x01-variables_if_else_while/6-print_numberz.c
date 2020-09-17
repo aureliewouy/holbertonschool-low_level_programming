@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-char ch;
+long int ch = 123456789;
 for (ch = 0; ch < 10; ch ++)
 {
-putchar(ch); 
+putchar((ch)+'0'); 
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
