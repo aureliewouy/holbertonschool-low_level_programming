@@ -38,10 +38,14 @@ void print_to_98(int c)
 		while (c > 99)
 		{
 			_putchar((c / 100) + '0');
-			_putchar((c % 100) + '0');
+			_putchar(((c / 100) - 1) + '0');
 			_putchar((c % 10) + '0');
+			if (c != 98)
+                        {
+                                _putchar(',');
+                                _putchar(' ');
+                        }
 			c--;
-
 		}
 		while (c >= 98)
 		{
@@ -57,6 +61,15 @@ void print_to_98(int c)
 			_putchar('\n');
 			}
 			c--;
+		}
+	}
+	else if (c < 0)
+	{
+		while ( c < 0)
+		{
+			_putchar('-');
+			_putchar((c) + '0');
+			c++;
 		}
 	}
 }
