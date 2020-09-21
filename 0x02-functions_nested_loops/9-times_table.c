@@ -17,6 +17,15 @@ void times_table(void)
 		while (compteur < 10)
 		{
 			resultat = n * compteur;
+			if (compteur != 0)
+                        {
+                                _putchar(',');
+                                _putchar(' ');
+				if (resultat < 10)
+				{
+					_putchar(' ');
+				}
+                        }
 			if (resultat < 10)
 			{
 				_putchar((resultat) + '0');
@@ -26,7 +35,6 @@ void times_table(void)
 				_putchar((resultat / 10) + '0');
 				_putchar((resultat % 10) + '0');
 			}
-			_putchar(',');
 			compteur++;
 		}
 	_putchar('\n');
