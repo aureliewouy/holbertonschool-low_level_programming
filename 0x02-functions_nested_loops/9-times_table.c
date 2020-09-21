@@ -12,20 +12,21 @@ void times_table(void)
 	long int compteur = 0;
 	long int nn = 0;
 	long int resultat;
-	while(nn < 10)
+
+	while (nn < 10)
 	{
 		while (compteur < 10)
 		{
 			resultat = n * compteur;
 			if (compteur != 0)
-                        {
-                                _putchar(',');
-                                _putchar(' ');
+			{
+				_putchar(',');
+				_putchar(' ');
 				if (resultat < 10)
 				{
 					_putchar(' ');
 				}
-                        }
+			}
 			if (resultat < 10)
 			{
 				_putchar((resultat) + '0');
