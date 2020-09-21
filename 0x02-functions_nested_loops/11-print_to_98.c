@@ -67,8 +67,7 @@ void print_to_98(int c)
 	{
 		while ( c < 0)
 		{
-			_putchar('-');
-			_putchar((c) + '0');
+			printf("%d", c);
 			c++;
 		}
 	}
