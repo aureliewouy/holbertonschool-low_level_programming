@@ -8,28 +8,55 @@
 
 void print_to_98(int c)
 {
-	while ( c < 99)
+	if (c < 99)
 	{
-		if (c < 10)
+		while ( c < 99)
 		{
-			_putchar((c) + '0');
+			if (c < 10)
+			{
+				_putchar((c) + '0');
+			}
+			else
+			{
+				_putchar((c / 10) + '0');
+				_putchar((c % 10) + '0');
+			}
+			if (c != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar('\n');
+			}
+			c++;
 		}
-		else
+	}
+	else if (c > 97)
+	{
+		while (c > 99)
+		{
+			_putchar((c / 100) + '0');
+			_putchar((c % 100) + '0');
+			_putchar((c % 10) + '0');
+			c--;
+
+		}
+		while (c >= 98)
 		{
 			_putchar((c / 10) + '0');
 			_putchar((c % 10) + '0');
+			if (c != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			else
+			{
+			_putchar('\n');
+			}
+			c--;
 		}
-		if (c != 98)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
-	c++;
-	}
-	while (c > 97)
-	{
-		_putchar((c / 10) + '0');
-		_putchar((c % 10) + '0');
-		c--;
 	}
 }
