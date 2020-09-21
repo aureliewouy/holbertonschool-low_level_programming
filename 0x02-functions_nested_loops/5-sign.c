@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _isalpha - check the code for Holberton School students.
+ * print_sign - check the code for Holberton School students.
  *@n: is the letter that we test.
  *
  * Return: Always 0.
