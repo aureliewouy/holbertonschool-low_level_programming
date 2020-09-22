@@ -2,17 +2,16 @@
 
 /**
  * print_times_table - Print the alphabet.
+ * @n: this is the number to print
  *
  * Return: Always 0.
  */
 
 void print_times_table(int n)
 {
-	long int compteur = 0;
-	long int num = 0;
-	long int nn = 0;
-	long int resultat;
-	if ( n <= 15 && n > 0)
+	long int compteur = 0, num = 0, nn = 0, resultat;
+
+	if (n <= 15 && n > 0)
 	{
 		while (nn <= n)
 		{
@@ -40,7 +39,7 @@ void print_times_table(int n)
 				else if (resultat > 99)
 				{
 					_putchar((resultat / 100) + '0');
-                                        _putchar(((resultat / 10) % 10) + '0');
+					_putchar(((resultat / 10) % 10) + '0');
 					_putchar((resultat % 10) + '0');
 				}
 				else
