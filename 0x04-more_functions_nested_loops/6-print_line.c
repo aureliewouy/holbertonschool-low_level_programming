@@ -12,6 +12,7 @@ void print_line(int n)
 {
 	char line = 95;
 	int nb;
+
 	for (nb = 1; nb <= n; nb++)
 	{
 		_putchar(line);
