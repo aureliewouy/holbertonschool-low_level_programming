@@ -13,7 +13,7 @@ void print_square(int size)
 	char square = '#';
 	int nb1 = 1, nb2 = 1;
 
-	if ( size <= 0)
+	if (size <= 0)
 	{
 		_putchar(' ');
 	}
