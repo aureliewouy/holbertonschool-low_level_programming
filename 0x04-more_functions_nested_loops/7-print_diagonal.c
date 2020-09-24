@@ -10,8 +10,7 @@
 
 void print_diagonal(int n)
 {
-	char line = 92;
-	char esp = ' ';
+	long int line = 92;
 	int i = 0, j = 0;
 
 	if (n <= 0)
@@ -23,7 +22,7 @@ void print_diagonal(int n)
 		i++;
 		while (j < i)
 		{
-			_putchar(esp);
+			_putchar(' ');
 			j++;
 		}
 		_putchar(line);
