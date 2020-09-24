@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
  * print_diagonal - check the code for Holberton School students.
@@ -26,7 +25,7 @@ void print_diagonal(int n)
 				_putchar(' ');
 				j++;
 			}
-			_putchar('\\');
+			_putchar(92);
 			_putchar('\n');
 			j = 0;
 		}
