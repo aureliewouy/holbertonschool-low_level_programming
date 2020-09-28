@@ -1,0 +1,1 @@
+This is some exercices about pointers and arrays in C
