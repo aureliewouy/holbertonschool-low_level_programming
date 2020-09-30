@@ -31,7 +31,7 @@ void puts_half(char *str)
 
 	if (n % 2 != 0)
 	{
-		n -= 1 / 2;
+		n += 1;
 	}
 	n = n / 2;
 	while (str[n] != '\0')
