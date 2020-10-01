@@ -4,7 +4,7 @@
  * *leet - Encide a string into 1337
  * @s : the script to encode
  *
- * Return : the string encoded into 1337
+ * Return: the string encoded into 1337
  */
 
 char *leet(char *s)
