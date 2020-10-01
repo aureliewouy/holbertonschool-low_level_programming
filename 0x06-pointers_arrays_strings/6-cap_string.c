@@ -12,12 +12,12 @@ char *cap_string(char *s)
 	int i = 0, j;
 	char separator[] = " \t\n,;.!?\"(){}";
 
-	while (s[i])
+	while (s[i] != '\0')
 	{
 		j = 0;
 		if (s[i] == '\t')
 			s[i] = 32;
-		while (s[i] != separator[j])
+		while (s[i] != separator[j] && j < 14)
 		{
 			j++;
 		}
