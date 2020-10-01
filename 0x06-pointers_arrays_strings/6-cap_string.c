@@ -10,7 +10,7 @@
 char *cap_string(char *s)
 {
 	int i = 0, j;
-	char separator[] = {44, 59, 46, 33, 63, 40, 41, 123, 125, '\n', 32};
+	char separator[] = " \t\n,;.!?\"(){}";
 
 	while (s[i] != '\0')
 	{
@@ -21,7 +21,7 @@ char *cap_string(char *s)
 		{
 			j++;
 		}
-		if (j < 13)
+		if (j < 14)
 		{
 			if (s[i + 1] >= 97 && s[i + 1] <= 122)
 			{
