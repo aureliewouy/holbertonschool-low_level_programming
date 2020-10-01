@@ -3,9 +3,9 @@
 /**
  * *string_toupper - changes all lowercase letter of a string to
  * uppercase
- * @c - the sring to uppercase
+ * @c : the string to uppercase
  *
- * Return : the string uppercase
+ * Return: the string uppercase
  */
 
 char *string_toupper(char *c)
