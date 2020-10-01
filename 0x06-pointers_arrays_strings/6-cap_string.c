@@ -15,13 +15,13 @@ char *cap_string(char *s)
 	while (s[i] != '\0')
 	{
 		j = 0;
-		if (s[i] == '\t')
+		if (s[i] == separator[1])
 			s[i] = 32;
-		while (s[i] != separator[j] && j < 14)
+		while (s[i] != separator[j] && j < 13)
 		{
 			j++;
 		}
-		if (j < 14)
+		if (j < 13)
 		{
 			if (s[i + 1] >= 97 && s[i + 1] <= 122)
 			{
