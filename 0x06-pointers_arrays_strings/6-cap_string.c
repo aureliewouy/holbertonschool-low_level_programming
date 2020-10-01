@@ -14,9 +14,9 @@ char *cap_string(char *s)
 
 	while (s[i] != '\0')
 	{
-		/*	if (s[i] == '\t')
-			s[i] = 32;*/
 		j = 0;
+		if (s[i] == '\t')
+			s[i] = ' ';
 		while (s[i] != separator[j])
 		{
 			j++;
@@ -28,8 +28,6 @@ char *cap_string(char *s)
 				s[i + 1] -= 32;
 			}
 		}
-		if (s[i] == '\t')
-                        s[i] = 32;
 		i++;
 	}
 	return (s);
