@@ -17,16 +17,16 @@ char *cap_string(char *s)
 		j = 0;
 		if (s[i] == separator[1])
 			s[i] = 32;
+		if (i == 0)
+		{
+			s[i] -= 32;
+		}
 		while (s[i] != separator[j] && j < 13)
 		{
 			j++;
 		}
 		if (j < 13)
 		{
-			if (i == 0)
-			{
-				s[i + 1] -= 32;
-			}
 			if (s[i + 1] >= 97 && s[i + 1] <= 122)
 			{
 				s[i + 1] -= 32;
