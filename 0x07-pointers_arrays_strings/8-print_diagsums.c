@@ -23,7 +23,7 @@ void print_diagsums(int *a, int size)
 		{
 			s1 += a[i];
 		}
-		if (i % (size - 1) == 0 && i != (nb - 1))
+		if (i )
 		{
 			s2 += a[i];
 		}
