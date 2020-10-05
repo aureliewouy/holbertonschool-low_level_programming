@@ -17,7 +17,7 @@ void print_diagsums(int *a, int size)
 	int i = 0;
 
 	nb = size * size;
-	while (i < nb)
+	for (i = 0; i < nb; i++)
 	{
 		if (i % (size + 1) == 0)
 		{
@@ -27,7 +27,6 @@ void print_diagsums(int *a, int size)
 		{
 			s2 += a[i];
 		}
-		i++;
 	}
 	printf("%d, %d\n", s1, s2);
 }
