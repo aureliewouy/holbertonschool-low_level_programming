@@ -1,0 +1,1 @@
+Exercice about pointers, multi-dimensional arrays and string in C
