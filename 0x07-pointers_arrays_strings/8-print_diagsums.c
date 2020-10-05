@@ -16,6 +16,17 @@ void print_diagsums(int *a, int size)
 	int nb;
 	int i = 0;
 
-
+	nb = size * size;
+	for (i = 0; i < nb; i++)
+	{
+		if (i % (size + 1) == 0)
+		{
+			s1 += a[i];
+		}
+		if (i % (size - 1) == 0 && i != (size * size) - 1)
+		{
+			s2 += a[i];
+		}
+	}
 	printf("%d, %d\n", s1, s2);
 }
