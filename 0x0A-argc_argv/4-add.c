@@ -16,14 +16,13 @@ int main(int argc, char *argv[])
 	int add = 0;
 	int count = 1;
 
-
 	if (argc < 2)
 	{
 		printf("0\n");
 	}
 	else
 	{
-		while (count < argc)
+		while (argv[count])
 		{
 			if (isdigit(*argv[count]) == 0)
 			{
