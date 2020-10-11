@@ -28,13 +28,9 @@ int main(int argc, char *argv[])
 			if (isdigit(*argv[count]) == 0)
 			{
 				printf("Error\n");
-                                return (1);
+				return (1);
 			}
-
-			else
-			{
-				add = add + atoi(argv[count]);
-			}
+			add = add + atoi(argv[count]);
 			count++;
 		}
 		printf("%d\n", add);
