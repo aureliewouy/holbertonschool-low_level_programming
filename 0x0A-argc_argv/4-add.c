@@ -25,15 +25,15 @@ int main(int argc, char *argv[])
 	{
 		while (count < argc)
 		{
-			if (isdigit(*argv[count]))
+			if (isdigit(*argv[count]) == 0)
 			{
-				add = add + atoi(argv[count]);
+				printf("Error\n");
+                                return (1);
 			}
 
 			else
 			{
-				printf("Error\n");
-				return (1);
+				add = add + atoi(argv[count]);
 			}
 			count++;
 		}
