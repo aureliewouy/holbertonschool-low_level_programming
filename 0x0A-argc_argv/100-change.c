@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		change = money - coin[i];
 		if (money < 0)
 		{
-			printf("0\n");
+			nb = 0;
 		}
 		while (coin[i])
 		{
@@ -51,6 +51,5 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
 	return (0);
 }
