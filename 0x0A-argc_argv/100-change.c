@@ -22,6 +22,10 @@ int main(int argc, char *argv[])
 	{
 		money = atoi(argv[1]);
 		change = money - coin[i];
+		if (money < 0)
+		{
+			printf("0\n");
+		}
 		while (coin[i])
 		{
 			if (change == 0)
