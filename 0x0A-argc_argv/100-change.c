@@ -28,7 +28,6 @@ int main(int argc, char *argv[])
 			if (change == 0)
 			{
 				nb = nb + 1;
-				printf("nb : %d\n", nb);
 				break;
 			}
 			if (change < 0)
@@ -38,8 +37,6 @@ int main(int argc, char *argv[])
 			while (change > 0)
 			{
 				change = change - coin[i];
-				printf("change : %d\n", change);
-				printf("nb : %d\n", nb);
 				nb++;
 			}
 			i++;
