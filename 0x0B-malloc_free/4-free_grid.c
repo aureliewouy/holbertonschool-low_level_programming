@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * free_grind - free a 2 dimensional grind
- * @grind: the grind
- * @height: the height
+ * free_grid - free a 2 dimensional grind/
+ * @grid: the grind.
+ * @height: the height.
  *
  * Return: Nothing.
  */
