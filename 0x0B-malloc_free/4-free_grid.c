@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * free_grind - free a 2 dimensional grind
