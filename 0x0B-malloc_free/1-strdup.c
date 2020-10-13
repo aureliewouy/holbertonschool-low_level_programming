@@ -21,7 +21,7 @@ char *_strdup(char *str)
 	while (str[size])
 		size++;
 	printf("size : %d", size);
-	new_s = malloc(size + 1);
+	new_s = malloc((size + 1) * sizeof(char));
 	dup = new_s;
 	while (*str)
 	{
