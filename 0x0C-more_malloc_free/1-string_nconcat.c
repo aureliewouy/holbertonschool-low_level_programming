@@ -38,12 +38,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	s3 = malloc(len1 + n + 1);
 	if (s1 == NULL)
 		s1 = "";
-        if (s2 == NULL)
-                s2 = "";
-	if (s3 == NULL)
-		return (NULL);
+	if (s2 == NULL)
+		s2 = "";
 	if (n >= len2)
 		n = len2;
+	if (s3 == NULL)
+		return (NULL);
 	while (i < len1)
 	{
 		s3[k] = s1[i];
