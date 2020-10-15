@@ -44,13 +44,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	s3 = malloc((len1 + n + 1) * sizeof(char));
 	if (s3 == NULL)
 		return (NULL);
-	while (i < len1)
+	while (s1[i])
 	{
 		s3[k] = s1[i];
 		i++;
 		k++;
 	}
-	while (j < n)
+	while (s2[j] && j < n)
 	{
 		s3[k] = s2[j];
 		k++;
