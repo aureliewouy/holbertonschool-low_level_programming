@@ -11,15 +11,15 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int *byte = 0;
+	char *byte;
 	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	byte = malloc(nmemb * sizeof(*byte));
+	byte = malloc(nmemb * size);
 	if (byte == NULL)
 		return (NULL);
-	for (i = 0; i < nmemb; i++)
+	for (i = 0; i < (nmemb * size); i++)
 	{
 		byte[i] = 0;
 	}
