@@ -50,7 +50,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 		k++;
 	}
-	while (k < len1 + n)
+	while (k < len1 + n && j < n)
 	{
 		s3[k] = s2[j];
 		k++;
