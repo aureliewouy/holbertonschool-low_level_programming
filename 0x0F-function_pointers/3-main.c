@@ -30,8 +30,8 @@ int main(int argc, char *argv[])
 	if ((op != '+' && op != '-' && op != '*' && op != '/' && op != '%')
 	    || strlen(c) != 1)
 	{
-                printf("Error\n");
-                exit(99);
+		printf("Error\n");
+		exit(99);
 	}
 	if (b == 0 && (op == '/' || op == '%'))
 	{
