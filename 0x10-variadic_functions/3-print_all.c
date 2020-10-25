@@ -59,7 +59,7 @@ void print_s(va_list list)
 void print_all(const char * const format, ...)
 {
 	va_list valist;
-	int i = 0, j;
+	int i = 0, j, k = 0;
 	char *sep = ", ";
 	Format formats[] = {
 		{'c', print_c},
@@ -78,9 +78,10 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == formats[j].c)
 			{
-				formats[j].f(valist);
-				if (j != 3)
+				if (k > 0)
 					printf("%s", sep);
+				formats[j].f(valist);
+				k++;
 			}
 			j++;
 		}
