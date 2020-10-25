@@ -45,7 +45,10 @@ void print_f(va_list list)
 
 void print_s(va_list list)
 {
-	printf("%s", va_arg(list, char *));
+	char *s = va_arg(list, char *);
+	if (s == NULL)
+		s = "(nil)";
+	printf("%s", s);
 }
 
 /**
@@ -78,7 +81,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == formats[j].c)
 			{
-				if (i != 0)
+				if (i > 0)
 					printf("%s", sep);
 				formats[j].f(valist);
 			}
