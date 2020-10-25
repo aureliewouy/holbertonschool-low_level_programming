@@ -46,10 +46,11 @@ void print_f(va_list list)
 void print_s(va_list list)
 {
 	char *s = va_arg(list, char *);
+
 	switch (s == NULL)
 	{
-	       	default:
-			s = "(nil)";
+	default:
+		s = "(nil)";
 		break;
 	}
 	printf("%s", s);
@@ -66,7 +67,7 @@ void print_s(va_list list)
 void print_all(const char * const format, ...)
 {
 	va_list valist;
-	int i = 0, j;
+	int i = 0, j, k = 0;
 	Format formats[] = {
 		{'c', print_c},
 		{'i', print_i},
@@ -84,9 +85,10 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == formats[j].c)
 			{
-				if (i > 0)
+				if (k > 0)
 					printf(", ");
 				formats[j].f(valist);
+				k++;
 			}
 			j++;
 		}
