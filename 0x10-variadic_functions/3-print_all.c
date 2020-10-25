@@ -67,7 +67,7 @@ void print_s(va_list list)
 void print_all(const char * const format, ...)
 {
 	va_list valist;
-	int i = 0, j, k = 0;
+	int i = 0, j;
 	Format formats[] = {
 		{'c', print_c},
 		{'i', print_i},
@@ -85,10 +85,9 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == formats[j].c)
 			{
-				if (k > 0)
+				if (i > 0)
 					printf(", ");
 				formats[j].f(valist);
-				k++;
 			}
 			j++;
 		}
