@@ -46,7 +46,12 @@ void print_f(va_list list)
 void print_s(va_list list)
 {
 	char *s = va_arg(list, char *);
-
+	switch (s == NULL)
+	{
+	       	default:
+			s = "(nil)";
+		break;
+	}
 	printf("%s", s);
 }
 
