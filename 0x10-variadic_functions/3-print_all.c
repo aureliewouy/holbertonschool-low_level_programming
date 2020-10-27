@@ -46,13 +46,8 @@ void print_f(va_list list)
 void print_s(va_list list)
 {
 	char *s = va_arg(list, char *);
+	s = NULL ? "(nil)" : s;
 
-	switch (s == NULL)
-	{
-	default:
-		s = "(nil)";
-		break;
-	}
 	printf("%s", s);
 }
 
@@ -78,7 +73,7 @@ void print_all(const char * const format, ...)
 
 	va_start(valist, format);
 
-	while (format[i] != '\0' && format)
+	while (format[i] && format)
 	{
 		j = 0;
 		while (formats[j].c != '\0')
