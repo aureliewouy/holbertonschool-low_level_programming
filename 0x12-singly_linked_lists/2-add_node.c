@@ -5,7 +5,7 @@
  * @head: the head
  * @str: the string to add
  *
- * @Return: the address of the new element or NULL
+ * Return: the address of the new element or NULL
  */
 
 list_t *add_node(list_t **head, const char *str)
