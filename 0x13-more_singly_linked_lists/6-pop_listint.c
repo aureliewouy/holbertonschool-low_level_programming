@@ -1,4 +1,4 @@
-y#include "lists.h"
+#include "lists.h"
 
 /**
  * pop_listint  - Deletes the head node of a list
