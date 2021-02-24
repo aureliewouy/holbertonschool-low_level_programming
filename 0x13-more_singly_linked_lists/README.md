@@ -2,18 +2,6 @@
 ==================================
 
 -   Foundations - Low-level programming & Algorithm -- Data structures and Algorithms
--   By Julien Barbier, co-founder & CEO at Holberton School
--   Weight: 1
--   Project over - took place from 11-02-2020 to 11-04-2020 - you're done with 125% of tasks.
--   QA review fully automated.
-
-#### In a nutshell...
-
--   **Auto QA review:** 89.65/90 mandatory & 7.65/35 optional
--   **Altogether:**  **121.38%**
-    -   Mandatory: 99.61%
-    -   Optional: 21.86%
-    -   Calculation:  99.61% + (99.61% * 21.86%)  == **121.38%**
 
 Resources
 ---------
